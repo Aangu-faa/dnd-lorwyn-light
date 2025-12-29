@@ -1,0 +1,100 @@
+{
+  "id": "dnd-lorwyn-light",
+  "title": "洛温：初光 Lorwyn: First Light",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "description": "<p>一场进入洛温-暗影荒原的旅行可能引导冒险者和仙灵们打交道、从类地精的波尬们那里学习炼金术或是与类巨灵的炎身探索启迪。冒险者们面临的危险是真实的，但任何进入此位面的探索都可能带来别处没有的巨大宝藏。这里的冒险选项是无限的。</p>",
+  "authors": [
+    {
+      "name": "Aangu",
+      "discord": "Aangu",
+      "flags": {}
+    }
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/dnd-lorwyn-light/assets/journal-art/cover.webp",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "tokenRingSubjectMappings": {
+      "modules/dnd-lorwyn-light/assets/tokens/": "modules/dnd-lorwyn-light/assets/subjects/"
+    },
+    "canUpload": true
+  },
+  "packs": [
+    {
+      "name": "book",
+      "label": "洛温：初光",
+      "path": "packs/book",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "options",
+      "label": "玩家选项",
+      "path": "packs/options",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "actors",
+      "label": "角色",
+      "path": "packs/actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "adventures",
+      "label": "冒险",
+      "path": "packs/adventures",
+      "type": "Adventure",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "packFolders": [
+    {
+      "name": "洛温：初光",
+      "color": "#9ed25b",
+      "sorting": "m",
+      "packs": [
+        "book",
+        "actors",
+        "options",
+        "adventures"
+      ],
+      "folders": []
+    }
+  ]
+}
